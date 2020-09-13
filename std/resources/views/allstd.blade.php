@@ -25,7 +25,9 @@
 <td>{{ $std->id }}</td>
 <td>{{ $std->name }}</td>
 <td>{{ $std->dept }}</td>
-<td> <button type="button" class="btn btn-primary">Edit</button>
+<td> <button type="button" class="btn btn-light" >
+<a href="{{ url('edit',$std->id) }}">
+Edit</button></a>
 <button type="button" class="btn btn-secondary">Delete</button>
 <button type="button" class="btn btn-success">OK</button></td>
 
