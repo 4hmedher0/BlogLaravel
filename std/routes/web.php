@@ -44,6 +44,10 @@ Route::post('/addform',"App\Http\Controllers\PostsController@addform");
 Route::get('/allstd',"App\Http\Controllers\PostsController@showform");
 
 
+Route::get('/edit/{id}',"App\Http\Controllers\PostsController@edit");
+Route::post('/update/{id}',"App\Http\Controllers\PostsController@update");
+
+
 
 
 
