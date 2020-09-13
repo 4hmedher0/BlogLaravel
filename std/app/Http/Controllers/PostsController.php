@@ -28,5 +28,23 @@ public function showform ()
   return view ('allstd',compact("post"));
 
 }
+    
+    public function edit($id)
+{
+  $post=Post::findOrFail($id);
+  return view ('editform',compact("post"));
+
+}
+
+public function update (Request $request,$id)
+{
+  $post=Post::findOrFail($id);
+  $post->update($request->all());
+  return redirect('allstd');
+
+
+}
+    
+    
 
 }
